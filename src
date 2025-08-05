@@ -1,0 +1,74 @@
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import AppointmentForm from "@/components/AppointmentForm";
+import ChatBot from "@/components/ChatBot";
+import Contact from "@/components/Contact";
+
+const Index = () => {
+  return (
+    <div className="min-h-screen">
+      <Navigation />
+      
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+        
+        <section id="services">
+          <Services />
+        </section>
+        
+        <section id="appointment">
+          <AppointmentForm />
+        </section>
+        
+        <section id="chatbot">
+          <ChatBot />
+        </section>
+        
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-medical-primary text-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Pearl Primary Healthcare</h3>
+              <p className="text-white/90 leading-relaxed">
+                Providing comprehensive primary healthcare services in Vaishali, Bihar. 
+                Your health is our priority with 24/7 emergency support.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Quick Links</h4>
+              <div className="space-y-2 text-white/90">
+                <p>• Book Appointment</p>
+                <p>• AI Health Assistant</p>
+                <p>• Emergency Services</p>
+                <p>• Contact Information</p>
+              </div>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Contact Information</h4>
+              <div className="space-y-2 text-white/90">
+                <p>📍 Mansurpur Halaiya & Mustafapur</p>
+                <p>🏥 Expert Medical Care</p>
+                <p>🕒 24/7 Emergency Care</p>
+                <p>💬 AI Assistant Available</p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/80">
+            <p>&copy; 2024 Pearl Primary Healthcare. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Index;
